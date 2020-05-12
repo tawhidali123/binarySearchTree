@@ -8,6 +8,8 @@ class Node {
   }
 }
 
+
+// binary search (order matters!)
 class BinarySearchTree {
   constructor(){
     this.root = null
@@ -60,6 +62,8 @@ class BinarySearchTree {
     return current
   }
 
+
+// binary trees (order doesnt matter)
 
   breadthFirstSearch(){
     let node = this.root
@@ -128,7 +132,7 @@ class BinarySearchTree {
       }
 
       data.push(node.value)
-      
+
       if(node.right){
         traverse(node.right)
       }
